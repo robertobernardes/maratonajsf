@@ -12,11 +12,11 @@
 		    	<h2>Segunda pagina de registro FlowScoped</h2>
 		    	<h:panelGrid columns="2">
 		    		<h:outputLabel value="nome"/>
-		    		<h:outputLabel value="testeFlowBean.nome"/>
+		    		<h:outputLabel value="#{testeFlowBean.nome}"/>
 		    		<h:outputLabel value="Sobrenome"/>
-		    		<h:outputLabel value="testeFlowBean.sobrenome"/>		    		
+		    		<h:outputLabel value="#{testeFlowBean.sobrenome}"/>		    		
 		    		<h:outputLabel value="Endereço"/>
-		    		<h:outputLabel value="testeFlowBean.endereco"/>
+		    		<h:outputLabel value="#{testeFlowBean.endereco}"/>
 		    		
 		    		<h:commandButton value="Back" action="registration2?faces-redirect=true"/>
 		    	</h:panelGrid>
