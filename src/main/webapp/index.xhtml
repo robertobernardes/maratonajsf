@@ -8,7 +8,14 @@
       xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
       xmlns:p="http://primefaces.org/ui">
 <h:head>
-
+	<script type="text/javascript">
+	   function fazMagica(magica) {
+	       alert(magica);
+	   }
+	   function alertNome(nome) {
+	       alert(nome);
+	   }
+	</script>
 </h:head>
 <h:body>
    <c:set var="numerosList" value="#{[1,2,3,4,5,6,7,8,9,10]}"/>
@@ -180,13 +187,5 @@
    #{numerosList.stream().filter(v -> v > 5).sum()}
    <br/>
 </h:body>
-
-<script type="text/javascript">
-   function fazMagica(magica) {
-       alert(magica);
-   }
-   function alertNome(nome) {
-       alert(nome);
-   }
-</script>
 </html>
+
