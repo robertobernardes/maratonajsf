@@ -2,11 +2,11 @@ package br.com.devdojo.maratonajsf.bean.flow;
 
 import javax.faces.flow.FlowScoped;
 import javax.inject.Named;
+
+import org.hibernate.event.spi.SaveOrUpdateEventListener;
+
 import java.io.Serializable;
 
-/**
- * Created by William on 3/29/2017.
- */
 @Named
 @FlowScoped(value = "registration")
 public class TesteFlowBean implements Serializable {
@@ -15,6 +15,16 @@ public class TesteFlowBean implements Serializable {
     private String endereco;
 
 
+    public String salvar() {
+    	System.out.println("Salvando no banco");
+    	System.out.println(nome);
+    	System.out.println(sobrenome);
+    	System.out.println(endereco);
+    	
+    	//return "exitToInicio";
+    	return "exitToIndex";
+	}
+    
     public String getNome() {
         return nome;
     }

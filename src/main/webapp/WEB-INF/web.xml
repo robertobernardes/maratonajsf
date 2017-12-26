@@ -23,7 +23,5 @@
     <session-config>
         <session-timeout>20</session-timeout>
     </session-config>
-    <error-page>
-    	<location>/error.xhtml</location>
-    </error-page>
+    
 </web-app>
