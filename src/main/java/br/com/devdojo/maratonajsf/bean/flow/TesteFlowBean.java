@@ -15,14 +15,14 @@ public class TesteFlowBean implements Serializable {
     private String endereco;
 
 
-    public String salvar() {
+    public void salvar() {
     	System.out.println("Salvando no banco");
     	System.out.println(nome);
     	System.out.println(sobrenome);
     	System.out.println(endereco);
     	
     	//return "exitToInicio";
-    	return "exitToIndex";
+    	//return "exitToIndex";
 	}
     
     public String getNome() {
