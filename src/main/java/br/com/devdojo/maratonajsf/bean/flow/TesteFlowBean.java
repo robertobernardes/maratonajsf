@@ -1,11 +1,11 @@
 package br.com.devdojo.maratonajsf.bean.flow;
 
+import java.io.Serializable;
+
 import javax.faces.flow.FlowScoped;
 import javax.inject.Named;
 
 import org.hibernate.event.spi.SaveOrUpdateEventListener;
-
-import java.io.Serializable;
 
 @Named
 @FlowScoped(value = "registration")
