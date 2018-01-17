@@ -5,6 +5,15 @@
     		http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
     
     <flow-definition id="pendencies">
+    	
+   	 	<flow-return id="proceedToRegistration3">
+        	<from-outcome>/registration/registration3</from-outcome>
+       	</flow-return>
+       	
+       	<flow-return id="exitToInicio">
+       		<from-outcome>registrationInicio</from-outcome>
+       	</flow-return>
+    	
     	<inbound-parameter>
     		<name>userName</name>
     		<value>#{testeFlowNestedBean.userName}</value>
@@ -13,6 +22,7 @@
     		<name>userSurname</name>
     		<value>#{testeFlowNestedBean.userSurname}</value>
     	</inbound-parameter>
+    	
     </flow-definition>
     
 </faces-config>

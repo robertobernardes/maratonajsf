@@ -5,22 +5,20 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-	
-	<h:head>
-	    <h:body>
-	    	<h:messages/>
-	    	<h:form>
-		    	<h2>Primeira pagina de registro FlowScoped</h2>
-		    	<h:panelGrid columns="2">
-		    		<h:outputLabel value="Nome"/>
-		    		<h:inputText value="#{testeFlowBean.nome}" 
-		    			required="true" requiredMessage="Nome obrigatório"/>
-		    		<h:outputLabel value="Sobrenome"/>
-		    		<h:inputText value="#{testeFlowBean.sobrenome}"/>
-		    		
-		    		<h:commandButton value="Next" action="registrationPage2"/>
-		    	</h:panelGrid>
-	    	</h:form>	    	
-	    </h:body>
-	</h:head>
+<h:head>
+    <h:body>
+        <h:messages/>
+        <h:form>
+            <h2>Primeira pagina de registro FlowScoped</h2>
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Nome"/>
+                <h:inputText value="#{testeFlowBean.nome}"
+                             required="true" requiredMessage="Nome obrigatorio"/>
+                <h:outputLabel value="Sobrenome"/>
+                <h:inputText value="#{testeFlowBean.sobrenome}"/>
+                <h:commandButton value="Next" action="registrationPage2"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</h:head>
 </html>

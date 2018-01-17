@@ -5,8 +5,6 @@ import java.io.Serializable;
 import javax.faces.flow.FlowScoped;
 import javax.inject.Named;
 
-import org.hibernate.event.spi.SaveOrUpdateEventListener;
-
 @Named
 @FlowScoped(value = "registration")
 public class TesteFlowBean implements Serializable {
